@@ -1,0 +1,22 @@
+{
+  "name": "twitter-parser",
+  "version": "1.0.0",
+  "description": "Access token :995572182364426241-HmsgQBGJ3nA4dhLwKp8hOizkIYIdFaA Access token secret :F8quY3FoWEoLMypSQjALB6kqsvt75ShRR26f59UnAmXWD",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/slonoko/twitter-parser.git"
+  },
+  "author": "Elie Khoury",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/slonoko/twitter-parser/issues"
+  },
+  "homepage": "https://github.com/slonoko/twitter-parser#readme",
+  "dependencies": {
+    "twit": "^2.2.11"
+  }
+}
