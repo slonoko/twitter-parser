@@ -34,4 +34,22 @@ function saveToJson(tweets){
     });
 }
 
-search(saveToJson);
+
+
+function filter_stream(){
+    var stream = Twitter.stream("statuses/filter",{ track: ['stuttgart'] });
+    console.info('Awaiting for tweets ...');
+
+    stream.on('tweet', function(tweet){
+        var jsonData = JSON.stringify(tweet)+",";
+        fs.appendFile("tweets.json", jsonData, function(err) {
+            if (err) {
+                console.log(err);
+            }
+        });
+    });
+}
+
+
+filter_stream();
+//search(saveToJson);
